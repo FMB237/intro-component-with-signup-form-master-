@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="div1">
+ <div class="title">
+    <p>Learn to code by watching others</p>
+   </div>
+    <div class="text">
+       See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+    </div>
+    </article>
+
+    <article class="div2">
+     <div class="prices">
+      <p>
+  <b>Try it free 7 days</b> then $20/mo. there after</p>
+     </div>
+     <form id="SignupForm">
+
+      <div class="inputbox">
+         <input type="text" name="FirstName" id="FirstName" placeholder="FirstName" aria-describedby="error1" aria-invalid="false"> 
+      <span class="error1">FirstName cannot be empty</span> 
+      <img src="images/icon-error.svg" alt="" class="icon">
+      </div>
+
+     <div class="inputbox">
+      <input type="text" name="Lastanme" id="LastName"placeholder="LastName" aria-describedby="error2" aria-invalid="false"> 
+      <span class="error2">LastName cannot be  mpty</span>
+        <img src="images/icon-error.svg" alt="" class="icon">
+     </div>
+
+     <div class="inputbox">
+ <input type="email" name="Email" id="email" placeholder="Email Address" aria-describedby="error3" aria-invalid="false">
+ <span class="error3">Look like this not an email</span>
+ <img src="images/icon-error.svg" alt="" class="icon">
+     </div>
+      
+     <div class="inputbox">
+      <input type="password" name="password" id="password" placeholder="Password" aria-describedby="error4" aria-invalid="false">
+        <span class="error4">password can't be empty</span>
+        <img src="images/icon-error.svg" alt="" class="icon">
+    </div>
+     
+
+      <button type="submit" id="SubmitBtn">  CLAIM YOUR FREE TRIAL
+</button>
+      <p> By clicking the button, you are agreeing to our <span style="color: red;">Terms and Services</span></p>
+     </form>
+    </article>
+  
+  </main>
+
+ 
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/FMB237">Fouenang Miguel Bruce</a>.
+    </p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>
